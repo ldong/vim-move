@@ -1,0 +1,34 @@
+*vim-move.txt* A short multi line description of your plugin
+
+===============================================================================
+CONTENTS                                                          *vim-move*
+
+    1. Intro .............................................. |vim-move-intro|
+    2. Requirements ................................ |vim-move-requirements|
+    3. Usage .............................................. |vim-move-usage|
+    4. Licence .......................................... |vim-move-licence|
+===============================================================================
+1. Intro                                                    *vim-move-intro*
+
+Make swapping lines easier.
+
+Default use <C-A-Up> <C-A-Down> to move up and down
+
+2. Requirements                                      *vim-move-requirements*
+
+None
+
+3. Usage                                                    *vim-move-usage*
+
+You can overwrite with your own
+
+nnoremap <silent> <C-A-Up> :<C-u>call MoveLineUp()<CR>
+nnoremap <silent> <C-A-Down> :<C-u>call MoveLineDown()<CR>
+inoremap <silent> <C-A-Up> <C-o>:call MoveLineUp()<CR>
+inoremap <silent> <C-A-Down> <C-o>:call MoveLineDown()<CR>
+xnoremap <silent> <C-A-Up> :<C-u>call MoveVisualUp()<CR>
+xnoremap <silent> <C-A-Down> :<C-u>call MoveVisualDown()<CR>
+
+4. Licence                                                *vim-move-licence*
+
+MIT
